@@ -19,4 +19,44 @@ h3 = 15px;
 
 h4 = 14px;
 
+№№№№ Структура папок и файлов 
+*********************
+    css/
+        style.css
+        et-line-css
+        slick-theme.css
+        slick.css
+        
+    js/
+        script.js
+        slick.js
+        slick-min.js
+    img/
+        images(jpeg,png)
+    index.html
+    fonts(all fonts for work)
+
+*********************
+
+№№№№ Описание папок и файлов
+*********************
+    css/ 
+        style.css - написанные нами стили
+        et-line-css - шрифтовые стили
+        slick-theme.css - для слайдеров
+        slick.css - для слайдеров
+        
+    js/
+        script.js - наши скрипты
+        slick.js - для слайдеров
+        slick-min.js - для слайдеров
+    img/
+        Картинки, в формате jpeg & png
+    index.html - главная страница
+    fonts(Все нужные для работы шрифты, закачивающеся локально)
+
+*********************
+
+    
+
 

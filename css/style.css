@@ -104,6 +104,31 @@ h3 {
 
 /* custom style */
 
+
+.d-f {
+	display: flex;
+}
+
+.fw-w {
+	flex-wrap: wrap;
+}
+
+.js-sb {
+	justify-content: space-between;
+}
+
+.js-fe {
+	justify-content: flex-end;
+}
+
+.al-c {
+	align-items: center;
+}
+
+.as-c {
+	align-self: center;
+}
+
 .header {
 	position: fixed;
 	top: 0;
@@ -134,12 +159,14 @@ h3 {
 	padding: 0 15px;
 }
 
-.logo {
-	float: left;
-}
 
 .nav {
-	float: right;
+	width: calc(100% - 140px);
+}
+
+.nav ul {
+	margin:  0 -15px;
+	width: calc(100% + 30px);
 }
 
 .nav-opener {
@@ -147,10 +174,7 @@ h3 {
 }
 
 .nav li {
-	float: left;
-	display: inline-block;
-	vertical-align: middle;
-	padding: 0 15px;
+	padding: 5px 15px;
 }
 
 .nav a {
@@ -164,9 +188,9 @@ h3 {
 .nav a:hover {
 	color: #777;
 }
-.nav li:last-child {
+/* .nav li:last-child {
 	padding-right: 0;
-}
+} */
 
 .bg-block {
 	
@@ -177,7 +201,6 @@ h3 {
 }
 
 .inner {
-	line-height: 100vh;
 	text-align: center;
 	position: relative;
 }
@@ -249,7 +272,7 @@ h3 {
     vertical-align: middle;
     background-color: transparent;
     border: none;
-    cursor: pointer;
+	cursor: pointer;
 }
 
 .btn-home img {
@@ -276,7 +299,6 @@ h3 {
 
 .col {
 	padding: 0 15px;
-	float: left;
 }
 
 .col-3 {
@@ -350,9 +372,9 @@ h3 {
 	margin: 0 0 65px;
 }
 
+
 .services-list li {
 	display: block;
-	float: left;
 	padding: 0 15px;
 	width: calc(100% / 5);
 	text-align: center;
@@ -627,15 +649,17 @@ h3 {
 /* latest-news section*/
 
 .latest-news-section .title-holder {
-	overflow: hidden;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 75px;
+	align-items: center;
 }
 
 .latest-news-section .title-holder h2 {
-	float: left;
+	margin-bottom: 0;
 }
 
 .latest-news-section .title-holder .all-blog {
-	float: right;
 	color: #999;
 	font-family: 'dosisregular', sans-serif;
 	text-transform: uppercase;
@@ -755,6 +779,13 @@ h3 {
 .contact-section h2 {
 	text-align: center;
 	margin: 0 0 90px;
+	width: 100%;
+}
+
+.contact-section form {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
 }
 
 .contact-section h3 {
@@ -835,13 +866,13 @@ h3 {
 	padding: 13px;
 }
 
+
 .btn-form {
 	padding: 10px 25px;
 	background-color: #333;
 	color: #fff;
 	font-size: 13px;
 	font-family: 'opensans_regular', sans-serif;
-	float: right;
 	text-transform: uppercase;
 }
 
@@ -1021,6 +1052,14 @@ footer h2 {
 
 
 @media (max-width: 768px) {
+	.js-c-sm {
+		justify-content: center;
+	}
+
+	.fd-c-sm {
+		flex-direction: column;
+	}
+
 	.active .nav {
 		opacity: 1;
 		visibility: visible;
@@ -1052,11 +1091,9 @@ footer h2 {
 	
 	.nav {
 		transition: .3s all ease-in-out;
-		float: none;
 		position: absolute;
 		top: 85px;
 		left: 0;
-		right: 0;
 		z-index: 100;
 		background-color: #fff;
 		color: #777;
@@ -1064,10 +1101,10 @@ footer h2 {
 		box-shadow: 0px 5px 7px #777;
 		opacity: 0;
 		visibility: hidden;
+		width: 100%;
 	}
 
 	.nav li {
-		float: none;
 		display: block;
 		padding: 0 15px 15px;
 		text-align: center
@@ -1081,7 +1118,6 @@ footer h2 {
 	.nav-opener {
 		display: block;
 		position: relative;
-		float: right;
 		background-color: transparent;
 		border: none;
 		width: 30px;
@@ -1300,7 +1336,6 @@ footer h2 {
 	}
 
 	.latest-news-section .title-holder .all-blog {
-		float: none;
 		font-size: 14px;
 		margin-bottom: 25px;
 	}
@@ -1332,10 +1367,6 @@ footer h2 {
 
 	.subscribe-section .icon-text {
 		font-size: 13px;
-	}
-
-	.btn-form {
-		float: none;
 	}
 
 	.contact-section h2 {
@@ -1415,6 +1446,14 @@ footer h2 {
 		font-size: 16px;
 	}
 
+	.quote-slider .slick-prev i {
+		left: -15px;
+	}
+	
+	.quote-slider .slick-next i {
+		right: -15px;
+	}
+
 	.subscribe-section .input-holder {
 		width: 100%;
 	}
@@ -1433,6 +1472,11 @@ footer h2 {
 
 	.contact-section .contact-list-holder {
 		margin-bottom: 20px;
+	}
+
+	.latest-news-section .all-blog i {
+		top: 70%;
+		right: 110px;
 	}
 
 	footer {
@@ -1524,6 +1568,11 @@ footer h2 {
 		margin: 0 0 20px;
 	}
 
+	.latest-news-section .all-blog i {
+		top: 70%;
+		right: 95px;
+	}
+
 	.btn-readmore {
 		font-size: 12px;
 	}
@@ -1591,6 +1640,11 @@ footer h2 {
 	 
 	.quote-slider .slick-prev {
 		height: 35px;
+	}
+
+	.latest-news-section .all-blog i {
+		top: 70%;
+		right: 90px;
 	}
 
 	.contact-section .contact-list-holder {
