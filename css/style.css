@@ -193,16 +193,14 @@ h3 {
 } */
 
 .bg-block {
-	
 	background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     height: 100vh;
 }
 
-.inner {
+.home-container {
 	text-align: center;
-	position: relative;
 }
 
 .title-wrap {
@@ -1172,9 +1170,17 @@ footer h2 {
 		height: 520px;
 	}
 
-	.inner {
-		line-height: 520px;
+	.home-container {
+		position: relative;
 	}
+
+	.btn-home img {
+		bottom:-60px;
+	}
+
+	/* .inner {
+		line-height: 520px;
+	} */
 
 	.user-info {
 		padding-top: 5px;
@@ -1217,9 +1223,9 @@ footer h2 {
 		font-size: 16px;
 	}
 
-	.inner {
+	/* .inner {
 		line-height: 440px;
-	}
+	} */
 
 	.default-section {
 		padding: 45px 0;
@@ -1418,9 +1424,13 @@ footer h2 {
 		height: 380px;
 	}
 
-	.inner {
-		line-height: 380px;
+	.btn-home img {
+		bottom:-35px;
 	}
+
+	/* .inner {
+		line-height: 380px;
+	} */
 
 	.quote-author {
 		font-size: 10px;
